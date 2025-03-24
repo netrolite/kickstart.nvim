@@ -15,7 +15,8 @@ vim.opt.mouse = 'a'
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
--- Enable break
+-- Breakindent: Every wrapped line will continue visually indented (same amount of
+-- space as the beginning of that line), thus preserving horizontal blocks of text.
 vim.opt.breakindent = true
 
 -- Save undo history
