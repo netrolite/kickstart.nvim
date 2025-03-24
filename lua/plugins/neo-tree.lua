@@ -14,6 +14,21 @@ return {
   },
   lazy = false,
   opts = {
+    filesystem = {
+      hijack_netrw_behavior = 'open_current',
+      follow_current_file = {
+        enabled = true,
+        leave_dirs_open = false,
+      },
+      filtered_items = {
+        always_show = { -- remains visible even if other settings would normally hide it
+          '.gitignore',
+        },
+        always_show_by_pattern = { -- uses glob style patterns
+          '.env*',
+        },
+      },
+    },
     window = {
       mappings = {
         ['<Tab>'] = function(state)
