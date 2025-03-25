@@ -47,7 +47,7 @@ return {
         ['O'] = {
           'show_help',
           nowait = false,
-          config = { title = 'Order by', prefix_key = 'o' },
+          config = { title = 'Order by', prefix_key = 'O' },
         },
         ['Oc'] = { 'order_by_created', nowait = false },
         ['oc'] = 'noop',
