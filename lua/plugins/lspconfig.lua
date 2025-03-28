@@ -59,7 +59,7 @@ return {
 
           -- Fuzzy find all the symbols in your current document.
           --  Symbols are things like variables, functions, types, etc.
-          map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+          map('<leader>cs', require('telescope.builtin').lsp_document_symbols, '[C]urrent document [S]ymbols')
 
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
@@ -81,7 +81,7 @@ return {
           map(']d', vim.diagnostic.goto_next, 'Go to next diagnostic')
 
           map('K', vim.lsp.buf.hover, 'Hover over current symbol')
-          map('D', vim.diagnostic.open_float, 'Open diagnostic float')
+          map('<leader>d', vim.diagnostic.open_float, 'Open diagnostic float')
 
           -- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
           ---@param client vim.lsp.Client
